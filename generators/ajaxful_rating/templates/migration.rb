@@ -5,6 +5,7 @@ class CreateRates < ActiveRecord::Migration
       t.belongs_to :rateable, :polymorphic => true
       t.float :stars, :null => false
       t.string :dimension
+      t.boolean :approved_flg, :default => false
       t.timestamps
     end
     
